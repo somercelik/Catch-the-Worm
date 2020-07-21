@@ -98,7 +98,8 @@ public class MainActivity extends AppCompatActivity {
                         restartActivity();
                     }
                 });
-                alert.show();
+                alert.setCancelable(false);                             //Bu ayarlanmadığında kullanıcı boş ekrana bakacağından ve oyunu kapatıp tekrar açması
+                alert.show();                                           //Gerektiğinden sadece NO ve YES seçeneklerini seçebilmesi sağlanarak bu hatalı durum önlenmiştir.
 
             }
         }.start();
